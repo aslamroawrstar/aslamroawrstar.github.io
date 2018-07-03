@@ -1,0 +1,183 @@
+@font-face {
+	font-family: PT Sans;
+	src: url('https://fonts.googleapis.com/css?family=PT+Sans');
+}
+
+@font-face {
+	font-family: bebas_neueregular;
+	src: url(../fonte/BebasNeue-webfont.eot),
+		url(../fonte/BebasNeue-webfont.svg),
+		url(../fonte/BebasNeue-webfont.ttf);
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+ul, li, a {
+	list-style: none;
+	padding-left: 0em;
+	color: #fff;
+	text-decoration: none;
+}
+
+ul, li {
+	line-height: 0.9;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.brilho:focus, a.brilho:hover {
+	text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
+	text-decoration: none;
+}
+
+a.brilho:active {
+	font-size: 105%;
+}
+
+h1 {
+	font-family: "bebas_neueregular", Helvetica, Arial, Sans-Serif;
+	font-size: 46pt; 
+	color: white;
+	margin: 0;
+    padding: 0;
+    border: 0;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+h2 { 
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif; 
+	font-size: 18pt; 
+	font-weight: lighter; 
+	color: white; 
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+h3 { 
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif; 
+	font-size: 14pt; 
+	font-weight: lighter; 
+	color: white; 
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: 350px minmax(750px, 100vw);
+	grid-template-rows: minmax(100%, 100vh);
+	min-height: 825px;
+}
+
+.menu {
+
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+	grid-template-rows: 250px 50px 275px 150px auto;
+	background-color: #202020;
+	line-height: 1;
+}
+
+.menu-logo {
+	background-position: center;
+	background-image: url(../imagens/logo.png);
+	background-repeat: no-repeat;
+	height: 211px;
+}
+
+.menu-titulo {
+	background-color: #202020;
+	text-align: justify;
+	font: 2.75rem "bebas_neueregular";
+    font-weight: bold;
+    line-height: 1.25;
+	text-rendering: optimizeLegibility;
+}
+
+.menu-descricao {
+	background-color: #202020;
+	width: 275px;
+	height: 250px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.5rem;
+    font-weight: 300;
+	color: rgba(255,255,255,.5);
+}
+
+.menu-selecao {
+	justify-content: flex-start;
+	background-color: #202020;
+	font-family: 'bebas_neueregular', sans-serif;
+	font-size: 2.5rem;
+}
+
+.menu-end {
+	align-content: flex-end;
+	background-color: #202020;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 20px;
+    font-weight: 300;
+	color: rgba(255,255,255,.5);
+}
+
+.conteudo {
+	align-items: center;
+	width: 100%;
+	min-width: inherit;
+	height: 100%;
+	min-height: inherit;
+	background: no-repeat center center; 
+	background-size: cover;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+	justify-content: center;
+}
+
+.contato-caixa-de-texto {
+	width: 500px;
+	height: auto;
+	display: grid;
+	align-content: center;
+	text-align: justify;
+	text-shadow: 0 0 30px black, 0 0 30px #87F, 0 0 30px #87F, 0 0 50px gray;
+	
+}
+
+.conteudo-cartas {
+	width: 600px;
+	height: 825px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+	grid-template-rows: 400px 250px 175px;
+}
+
+.carta {
+	width: 600px;
+	height: 400px;
+	background: no-repeat center center; 
+	background-size: auto 375px;
+}
+
+.carta-descricao {
+	text-shadow: 0 0 30px black, 0 0 30px #87F, 0 0 30px #87F, 0 0 50px gray;
+}
