@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+@font-face {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Bebas Neue'),
+		url('../fonte/BebasNeue Bold.ttf') format('truetype'),
+		url('../fonte/BebasNeue-Regular.woff2') format('woff2'), 
+		url('../fonte/BebasNeue-Regular.woff')format('woff'),
+		url('../fonte/BebasNeue-Regular.ttf') format('truetype'),
+		url('../fonte/BebasNeue-Regular.eot') format('embedded-opentype');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#canvas {
+	overflow: hidden;
+}
+
+ul, li, a {
+	color: #fff;
+	text-decoration: none;
+}
+
+ul {
+	margin: inherit;
+	padding-left: 0;
+}
+
+li {
+	line-height: 0.9;
+	list-style: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.brilho:focus, a.brilho:hover {
+	text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
+	text-decoration: none;
+}
+
+a.brilho:active {
+}
+
+h1 {
+	font: 2.5rem 'Fjalla One', sans-serif;
+	color: white;
+	margin: 0;
+    padding: 0;
+    border: 0;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+h2 { 
+	font: 1.5rem 'Fjalla One', sans-serif;
+	font-weight: lighter; 
+	color: white; 
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+h3 { 
+	font: 14pt 'Fjalla One', sans-serif;
+	font-weight: lighter; 
+	color: white; 
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: 350px minmax(773px, 100vw);
+	height: 100vh;
+	min-height: 773px;
+	grid-template-areas: "lateral-esquerda lateral-direita";
+}
+
+.lateral-esquerda {
+	display: grid;
+	grid-template-rows: 1rem auto 1fr;
+	justify-content: center;
+	grid-gap: 1rem;
+	grid-template-areas: "." "menu" "rodape";
+	position: relative;
+	grid-area: lateral-esquerda;
+	z-index: 0;
+	background:radial-gradient(220% 105% at top center,#000000 10%,#000000 40%,#75517D 65%,#1B2947); 
+	}
+
+.anime {
+	position: absolute;
+	z-index: -1;
+}
+	
+.menu {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-rows: auto auto auto auto;
+	width: 260px;
+	grid-gap: 1rem;
+	grid-area: menu;
+}
+
+.menu-logo {
+	background-position: center;
+	background-image: url(../imagens/logo.png);
+	background-repeat: no-repeat;
+	height: 211px;
+}
+
+.menu-titulo {
+	font: 2.70rem 'Bebas Neue', sans-serif;
+}
+
+.menu-descricao {
+	height: auto;
+	font: 1.5rem 'Fjalla One', sans-serif;
+	color: hsla(0,0%,60%,1.00);
+	line-height: 1.2;
+}
+
+.menu-selecao {
+	justify-content: flex-start;
+	font: 2.5rem 'Bebas Neue', sans-serif;
+}
+
+.rodape {
+	width: inherit;
+	font: 1rem 'Fjalla One', sans-serif;
+	color: hsla(0,0%,60%,1.00);
+	align-content: flex-end;
+	display: grid;
+	grid-area: rodape;
+	margin-bottom: 1.5rem;
+}
+
+.lateral-direita {
+	width: 100%;
+	min-width: inherit;
+	height: 100%;
+	min-height: inherit;
+	background: no-repeat center center; 
+	background-size: cover;
+	grid-area: lateral-direita;
+	align-content: center;
+	justify-content: center;
+	display: grid;
+}
+
+.grid {
+	display: grid;
+	justify-content: center;
+}
+
+.contato-caixa-de-texto {
+	width: 600px;
+	height: auto;
+	display: grid;
+	align-content: center;
+	text-align: justify;
+	text-shadow: 0 0 30px black, 0 0 30px #87F, 0 0 30px #0A1737, 0 0 50px gray;
+	background-color: rgba(10,23,55,0.3);
+	box-shadow: 0 0 20px rgba(10,23,55,0.2);
+	padding: 20px;
+}
+
+.conteudo-cartas {
+	width: 600px;
+	height: 825px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+	grid-template-rows: 650px 175px;
+}
+
+.carta {
+	width: 600px;
+	height: 400px;
+	background: no-repeat center center; 
+	background-size: auto 375px;
+}
+
+.carta-descricao {
+	text-shadow: 0 0 30px black, 0 0 30px #87F, 0 0 30px #87F, 0 0 50px gray;
+	background-color: rgba(10,23,55,0.3);
+	box-shadow: 0 0 20px rgba(10,23,55,0.2);
+	padding: 20px;
+	text-align: justify;
+}
+
+nav.lista, ul.lista, li.lista, a.lista, img.lista {
+	width: 37px;
+	height: 50px;
+}
+
+nav.lista, ul.lista, li.lista {
+	display: inline;
+	white-space: normal;
+}
+
+a.lista {
+}
+
+.lista-de-cartas {
+	width: auto;
+	height: auto;
+}
